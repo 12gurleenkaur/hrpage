@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #ok {
+            font-size: 50px;
+            width: 100%;
+            height: 100px;
+            background: #ADEFD1FF url('https://cdn.dribbble.com/users/3438534/screenshots/9947809/media/e6a27714db6a1db10cf94290c3ce012e.jpg?resize=450x338&vertical=center') no-repeat;
+            background-position: left top;
+            background-size: 100px 100px;
+            text-align: center;
+            color: #02203FFF;
+            line-height: 100px; /* Center the text vertically */
+            margin: 0 auto;
+            display: block;
+        }
+
+        .background-image {
+            background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        header div {
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            flex: 1;
+        }
+
+        #y {
+            color: #ADEFD1FF;
+        }
+
+        #u {
+            color: #ADEFD1FF;
+        }
+
+        #i {
+            color: #ADEFD1FF;
+        }
+
+        #o {
+            color: #ADEFD1FF;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .login-form {
+            width: 30%;
+        }
+
+        .company-details {
+            width: 60%;
+            color: #fff;
+        }
+
+        input[type="text"], input[type="password"], button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus, button:focus {
+            transform: rotateY(0deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            background-color: #ADEFD1FF;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ADEFD1FF;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div id="ok">PEOPLE SPHERE</div>
+        <header>
+            <div id="y"><a href="company3.html">VACANCY</a></div>
+            <div id="u"><a href="company4.html">EMPLOYEE PORTAL</a></div>
+            <div id="i"><a href="company6.html">EMPLOYEE PORTAL</a></div>
+            <div id="o"><a href="company7.html">APPLICANT STATUS</a></div>
+            <div id="o"><a href="company8.html">CAMPUSING</a></div>
+            <div id="o"><a href="company9.html">APPLICATION FORM</a></div>
+        </header>
+        <div class="container">
+            <div class="login-form">
+                <input type="text" id="username" placeholder="Username"><br>
+                <input type="password" id="password" placeholder="Password"><br>
+                <button>SUBMIT</button>
+            </div>
+            <div class="company-details">
+                <h2>PEOPLE SPHERE</h2>
+                <p>PeopleSpheres is a unified platform that consolidates various HR systems and data, offering a centralized hub for cross-application reporting, workflows, and more. The company provides a next-generation People Platform designed to deliver HR solutions in a customizable and scalable manner, allowing businesses to adapt to changing needs.<br>
+                Here are some key elements about PeopleSpheres:<br>
+                <b> Mission:</b> To provide a unified platform for HR solutions, enabling businesses to adapt to changing needs.<br>
+                <b> Products/Services:</b> A next-generation People Platform offering customizable and scalable HR solutions.<br>
+                <b> Goals:</b> To help businesses consolidate their HR systems and data, providing a centralized hub for cross-application reporting, workflows, and more.<br>
+                <b> Unique Value Proposition:</b> PeopleSpheres offers a flexible and adaptable HR platform that can be customized to meet the specific needs of each business.<br>
+                PeopleSpheres aims to simplify HR operations by providing a single platform for managing various HR functions, eliminating data silos, and reducing complexity associated with multiple vendors.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

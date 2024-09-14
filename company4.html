@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<style>
+     #ok {
+            font-size: 50px; /* Increase the font size */
+            width: 100%; /* Increase the width to accommodate the larger text */
+            height: 100px; /* Increase the height to accommodate the larger text */
+            background: #ADEFD1FF url('https://cdn.dribbble.com/users/3438534/screenshots/9947809/media/e6a27714db6a1db10cf94290c3ce012e.jpg?resize=450x338&vertical=center') no-repeat; 
+    background-position: left top; /* Position the image at the top-left corner */
+            background-size: 100px 100px; /* Set the width and height of the logo image */
+            text-align: center; /* Center the text horizontally */
+            color: #02203FFF;
+            line-height: 30px; /* Center the text vertically */
+            margin: 0 auto; /* Center the div element horizontally */
+            display: inline-block; /* Add this to display the div inline-block */
+            padding-top: 40px;
+        }
+        #i {
+            font-size: 30px;
+    color: #ADEFD1FF; /* blue color for VACANCY */
+    border-width: 4px;
+    border: #02203FFF;
+    background-color: #02203FFF; /* light gray background for VACANCY */
+    text-align: center; /* center the text in VACANCY */
+    width: 100%; /* make VACANCY take up the full width */
+    height: 70px;
+    display: block; /* make VACANCY a block element */
+    margin: 0 auto; /* center the element horizontally */
+    padding-top: 20px;
+  }
+  .container {
+  display: flex; /* Make the container a flexbox */
+  justify-content: space-between; /* Space the divs evenly */
+  gap: 2px; /* Reduce the gap to -10px to remove space between divs */
+}
+
+.box {
+  width: 8%; /* Set the width of each div to 10% */
+  height: 450px; /* Set the height of each div */
+  background-color: #c4baba; /* Set a light gray background color */
+  border: 1px solid #ddd; /* Add a light gray border */
+  padding-top: 20px; /* Reduce the padding-top to 20px */
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 5%;
+  margin-top: 40px; /* Add a margin-top of 20px to move the divs down */
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.circle {
+  width: 140px; /* Set the width and height of the circle */
+  height: 120px;
+  border-radius: 50%; /* Create a circular shape */
+  background-color: #fff; /* Set a white background color */
+  margin: 0 auto; /* Center the circle horizontally */
+}
+
+.image {
+  width: 100%; /* Set the width and height of the image to 100% */
+  height: 100%;
+  background-size: cover; /* Scale the image to cover the circle */
+  border-radius: 50%; /* Create a circular shape for the image */
+}
+.image {
+  width: 100%; /* Set the width and height of the image to 100% */
+  height: 100%;
+  background-size: contain; /* Scale the image to fit within the circle */
+  border-radius: 50%; /* Create a circular shape for the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}
+.profile-info {
+  text-align: center;
+}
+
+.location, .job-type, .skills {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.location i, .job-type i, .skills i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+
+
+
+.box:hover {
+    transform: rotateY(8deg); /* remove the rotation effect on hover */
+  }
+  #view-profile {
+  background-color: #02203FFF;
+  color: #ADEFD1FF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px; /* adjust the width here */
+  height: 80px; /* adjust the height here */
+  font-size: 16px; /* adjust the font size here */
+}
+
+.horizontal-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.background-image {
+  background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.background-image {
+  background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+</style>
+<body>
+  <div class="background-image">
+    <body bgcolor="black">
+        <div id="ok">PEOPLE SPHERE</div>
+        <div id="i"> EMPLOYEE PORTAL </div>
+        <div class="container">
+            <div class="box">
+                <div class="circle">
+                  <div class="image" style="background-image: url('https://images.unsplash.com/photo-1528228728175-149802236c04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3RyYWlnaHQlMjBmYWNlfGVufDB8fDB8fHww');"></div>
+                </div>
+                <div class="profile-info">
+                  <h2><b>Al Amin Bali</b></h2>
+                  <p>UX Designer</p>
+                  <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Newyork, USA</span>
+                  </div>
+                  <div class="job-type">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Full Time</span>
+                  </div>
+                  <div class="skills">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Figma</span>
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Photoshop</span>
+                  </div>
+                
+                </div>
+                <button id="view-profile">VIEW PROFILE</button>
+              </div>
+            <div class="box">
+              <div class="circle">
+                <div class="image" style="background-image: url('https://images.unsplash.com/photo-1620246499808-d9fe1b7858dc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHN0cmFpZ2h0JTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D');"></div>
+              </div>
+              <div class="profile-info">
+                <h2><b>Jonathon Doe</b></h2>
+                <p>UX Designer</p>
+                <div class="location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Newyork, USA</span>
+                </div>
+                <div class="job-type">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Full Time</span>
+                </div>
+                <div class="skills">
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Figma</span>
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Photoshop</span>
+                </div>
+               
+              </div>
+              <button id="view-profile">VIEW PROFILE</button>
+            </div>
+            <div class="box">
+              <div class="circle">
+                <div class="image" style="background-image: url('https://t4.ftcdn.net/jpg/08/83/59/41/240_F_883594172_LFm2nSwwRaQH9QBDMAze8ggwJIVrsfl9.jpg');"></div>
+              </div>
+              <div class="profile-info"></div>
+                <h2><b>Jack Alexander</b></h2>
+                <p>Data analyst</p>
+                <div class="location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>France</span>
+                </div>
+                <div class="job-type">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Part-Time</span>
+                </div>
+                <div class="skills">
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Figma</span>
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Photoshop</span>
+                </div>
+                <button id="view-profile">VIEW PROFILE</button>
+              </div>
+              
+            </div>
+          
+          </div>
+
+
+       
+      </div>
+
+</body>
+</html>

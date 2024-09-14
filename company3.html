@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #ok {
+            font-size: 50px; /* Increase the font size */
+            width: 100%; /* Increase the width to accommodate the larger text */
+            height: 100px; /* Increase the height to accommodate the larger text */
+            background: #ADEFD1FF url('https://cdn.dribbble.com/users/3438534/screenshots/9947809/media/e6a27714db6a1db10cf94290c3ce012e.jpg?resize=450x338&vertical=center') no-repeat; 
+    background-position: left top; /* Position the image at the top-left corner */
+            background-size: 100px 100px; /* Set the width and height of the logo image */
+            text-align: center; /* Center the text horizontally */
+            color: #02203FFF;
+            line-height: 30px; /* Center the text vertically */
+            margin: 0 auto; /* Center the div element horizontally */
+            display: inline-block; 
+            padding-top: 40px;
+        }
+        #i {
+            font-size: 30px;
+    color: #ADEFD1FF; 
+    border-width: 4px;
+    border: #02203FFF;
+    background-color: #02203FFF; /* light gray background for VACANCY */
+    text-align: center; /* center the text in VACANCY */
+    width: 100%; /* make VACANCY take up the full width */
+    height: 70px;
+    display: block; /* make VACANCY a block element */
+    margin: 0 auto; /* center the element horizontally */
+    padding-top: 20px;
+  }
+  .container {
+    perspective: 1000px; /* add perspective to create a 3D effect */
+  }
+
+  .box {
+    display: inline-block; /* make the divs display horizontally */
+    width: 20%; /* set the width of each div */
+    height: 400px; /* set the height of each div */
+    background-color: #ADEFD1FF; /* light gray background color */
+    margin: 10px; /* add some margin between the divs */
+    transform: rotateY(30deg); /* add a 3D rotation effect */
+    transition: transform 0.5s; /* add a transition effect */
+    align-items: center;
+    padding-top: 20px;
+    
+  }
+
+  .box:hover {
+    transform: rotateY(40deg); /* remove the rotation effect on hover */
+  }
+  .job-counter,.job-counter1,.job-counter2 ,.job-counter3{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#job-count,#job-counter1,#job-counter2,#job-counter3 {
+  counter-reset: job-count 0;
+  animation: count 10s ease-in-out;
+}
+
+@keyframes count {
+  0% {
+    content: counter(job-count);
+    content: counter(job-count1);
+    content: counter(job-count2);
+    content: counter(job-count3);
+  }
+  100% {
+    content: "10";
+  }
+}
+.apply-button {
+  background-color:#02203FFF; /* Green */
+  color:#ADEFD1FF; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.apply-button:hover {
+  background-color: #ADEFD1FF; /* Darker green on hover */
+}
+.job-title {
+  font-weight: bold; /* Make the text bold */
+  font-size: 1.2em; /* Increase the font size slightly */
+  color: #333; /* Dark gray color */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+.background-image {
+  background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+</style>
+<body bgcolor="black">
+  <div class="background-image">
+    <div id="ok">PEOPLE SPHERE</div>
+    <div id="i"> VACANCY</div>
+    <div class="container">
+        <center>
+            <div class="box">
+                <span class="job-title">NETWORKER </span>
+              <p>•Ordering and installing computer network hardware and software, as well as equipment like servers and firewalls  <br>
+                •Improving the network’s connection speed<br>
+                •Using computer diagnostics and antivirus software to protect and optimize the network<br>
+                •Occasionally providing support for desktop computers in addition to networked devices<br></p>
+                <div class="job-counter">
+                    <span id="job-count">0</span>
+                    <span>/ 10 jobs available</span>
+                  </div>
+                  <script>
+                    const jobCountElement = document.getElementById("job-count");
+                    let count = 0;
+              
+                    function animateCount() {
+                      if (count < 5) {
+                        jobCountElement.textContent = count;
+                        count++;
+                        setTimeout(animateCount, 700); // adjust the delay to control the animation speed
+                      } else {
+                        jobCountElement.textContent = "5";
+                      }
+                    }
+              
+                    animateCount();
+                  </script>
+                  <button class="apply-button">JOB DESCRIPTION</button>
+              </div>
+              <div class="box">
+                <span class="job-title">JOB ANALYST</span>
+                <p>•Ordering and installing computer network hardware and software, as well as equipment like servers and firewalls  <br>
+                  •Improving the network’s connection speed<br>
+                  •Using computer diagnostics and antivirus software to protect and optimize the network<br>
+                  •Occasionally providing support for desktop computers in addition to networked devices<br>
+                </p>
+                <div class="job-counter1">
+                  <span id="job-count1">0</span>
+                  <span>/ 10 jobs available</span>
+                </div>
+                <script>
+                  const jobCountElement1 = document.getElementById("job-count1");
+                  let count1 = 0;
+              
+                  function animateCount1() {
+                    if (count1 < 7) {
+                      jobCountElement1.textContent = count1; // Update this line
+                      count1++;
+                      setTimeout(animateCount1, 700); // adjust the delay to control the animation speed
+                    } else {
+                      jobCountElement1.textContent = "7";
+                    }
+                  }
+              
+                  animateCount1();
+                </script>
+                <button class="apply-button">JOB DESCRIPTION</button>
+              </div>
+        <div class="box">
+            <span  class="job-title">FULL-STACK DEVELOPER</span>
+                <p>•Ordering and installing computer network hardware and software, as well as equipment like servers and firewalls  <br>
+                  •Improving the network’s connection speed<br>
+                  •Using computer diagnostics and antivirus software to protect and optimize the network<br>
+                  •Occasionally providing support for desktop computers in addition to networked devices<br>
+                </p>
+                <div class="job-counter2">
+                  <span id="job-count2">0</span>
+                  <span>/ 10 jobs available</span>
+                </div>
+                <script>
+                  const jobCountElement2 = document.getElementById("job-count2");
+                  let count2 = 0;
+              
+                  function animateCount2() {
+                    if (count2 < 4) {
+                      jobCountElement2.textContent = count2; // Update this line
+                      count2++;
+                      setTimeout(animateCount2, 700); // adjust the delay to control the animation speed
+                    } else {
+                      jobCountElement2.textContent = "4";
+                    }
+                  }
+              
+                  animateCount2();
+                </script>
+                <button class="apply-button">JOB DESCRIPTION</button>
+        </div>
+        <div class="box">
+            <span  class="job-title">DATA SCIENTIST</span>
+            <p>•Ordering and installing computer network hardware and software, as well as equipment like servers and firewalls  <br>
+              •Improving the network’s connection speed<br>
+              •Using computer diagnostics and antivirus software to protect and optimize the network<br>
+              •Occasionally providing support for desktop computers in addition to networked devices<br>
+            </p>
+            <div class="job-counter3">
+              <span id="job-count3">0</span>
+              <span>/ 10 jobs available</span>
+            </div>
+            <script>
+              const jobCountElement3 = document.getElementById("job-count3");
+              let count3 = 0;
+          
+              function animateCount3() {
+                if (count3 < 3) {
+                  jobCountElement3.textContent = count3; // Update this line
+                  count3++;
+                  setTimeout(animateCount3, 700); // adjust the delay to control the animation speed
+                } else {
+                  jobCountElement3.textContent = "3";
+                }
+              }
+          
+              animateCount3();
+              
+            </script>
+            <button class="apply-button">JOB DESCRIPTION</button>
+        </div></center>
+      </div>
+      </div>
+</body>
+</html>

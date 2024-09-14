@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set a clean, modern font */
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .background-image {
+            background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            overflow: auto; /* Allow scrolling if the content overflows */
+        }
+
+        #ok {
+            font-size: 50px;
+            width: 100%;
+            height: 100px;
+            background: #ADEFD1FF url('https://cdn.dribbble.com/users/3438534/screenshots/9947809/media/e6a27714db6a1db10cf94290c3ce012e.jpg?resize=450x338&vertical=center') no-repeat;
+            background-position: left top;
+            background-size: 100px 100px;
+            text-align: center;
+            color: #02203FFF;
+            line-height: 100px; /* Center the text vertically */
+            margin: 0 auto;
+            display: block;
+        }
+
+        #i {
+            font-size: 1.8em;
+            color: #212325;
+            background-color: #eee;
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .candidate-info {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .candidate-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .candidate-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .status-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-left: 10px;
+            border: 2px solid #ddd;
+        }
+
+        .selected {
+            background-color: #2ecc71;
+        }
+
+        .internship {
+            background-color: #3498db;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        #i {
+            font-size: 20px;
+    color: #ADEFD1FF; 
+    background-color: #02203FFF; 
+    text-align: center; 
+    width: 100%; 
+    height: 30px;
+    display: block;
+    margin: 0 auto; 
+    padding-top: 20px;
+  }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div id="ok">PEOPLE SPHERE</div>
+        <div id="i">CAMPUSING</div>
+
+        <div class="candidate-info">
+            <div class="candidate-name">John Doe</div>
+            <div class="status-box selected"></div>
+            <p>Selected for the position of Software Engineer</p>
+        </div>
+
+        <div class="candidate-info">
+            <div class="candidate-name">Jane Smith</div>
+            <div class="status-box internship"></div>
+            <p>Selected for internship in the Marketing department</p>
+        </div>
+    </div>
+</body>
+</html>

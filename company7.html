@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Status</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        #ok {
+    font-size: 50px; 
+    width: 100%; 
+    height: 100px; 
+    background: #ADEFD1FF url('https://cdn.dribbble.com/users/3438534/screenshots/9947809/media/e6a27714db6a1db10cf94290c3ce012e.jpg?resize=450x338&vertical=center') no-repeat; 
+    background-position: left top; 
+    background-size: 100px 100px; 
+    text-align: center; 
+    color: #02203FFF;
+    line-height: 30px; 
+    margin: 0 auto; 
+    display: inline-block; 
+    padding-top: 40px;
+}
+
+#i {
+            font-size: 1.8em;
+            color: #212325;
+            background-color: #eee;
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h3 {
+            color: #02203FFF;
+            font-size: 22px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #02203FFF;
+            padding-bottom: 10px;
+        }
+
+        .dropdown {
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #02203FFF;
+            color: #ADEFD1FF;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropbtn:hover {
+            background-color: #2980b9;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+        .background-image {
+  background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+    </style>
+</head>
+<body>
+    
+    <div id="ok">PEOPLE SPHERE</div>
+    <div id="i">Applicant Status</div>
+    <div class="background-image">
+    
+    <div class="container">
+        <div class="header">
+            <h2>Application Status</h2>
+        </div>
+        <div class="content">
+            <h3>Shortlisted Candidates</h3>
+            <div class="dropdown">
+                <button class="dropbtn">View Shortlisted Candidates</button>
+                <div class="dropdown-content">
+                    <a href="#">Walish</a>
+                    <a href="#">John Smith</a>
+                    <a href="#">Jane Doe</a>
+                </div>
+            </div>
+            
+            <h3>Rejected Candidates</h3>
+            <div class="dropdown">
+                <button class="dropbtn">View Rejected Candidates</button>
+                <div class="dropdown-content">
+                    <a href="#">John Doe</a>
+                    <a href="#">Jane Smith</a>
+                    <a href="#">Bob Johnson</a>
+                </div>
+            </div>
+            
+            <h3>Waitlist Candidates</h3>
+            <div class="dropdown">
+                <button class="dropbtn">View Waitlist Candidates</button>
+                <div class="dropdown-content">
+                    <a href="#">John Doe</a>
+                    <a href="#">Jane Smith</a>
+                    <a href="#">Bob Johnson</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <p>&copy; 2024 People Sphere | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
