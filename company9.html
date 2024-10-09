@@ -12,16 +12,15 @@
             background-color: #f0f0f0;
         }
         .container {
-    width: 50%;
-    margin: 40px auto;
-    background-color: #fff;
-    padding: 20px;
-    border: 10px solid;
-    border-image: linear-gradient(to bottom, #ADEFD1FF, #ADEFD1FF) 1;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
+            width: 50%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 10px solid;
+            border-image: linear-gradient(to bottom, #ADEFD1FF, #ADEFD1FF) 1;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
 
         .header {
             background-color: #333;
@@ -68,7 +67,7 @@
             width: 100%; 
             height: 100px; 
             background: #ADEFD1FF url('https://cdn.dribbble.com/users/3438534/screenshots/9947809/media/e6a27714db6a1db10cf94290c3ce012e.jpg?resize=450x338&vertical=center') no-repeat; 
-    background-position: left top; 
+            background-position: left top; 
             background-size: 100px 100px; 
             text-align: center; 
             color: #02203FFF;
@@ -79,138 +78,134 @@
         }
         #i {
             font-size: 20px;
-    color: #ADEFD1FF; 
-    background-color: #02203FFF; 
-    text-align: center; 
-    width: 100%; 
-    height: 30px;
-    display: block;
-    margin: 0 auto; 
-    padding-top: 20px;
-  }
-  .background-image {
-  background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-}
-body.background-image {
-  background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;}
+            color: #ADEFD1FF; 
+            background-color: #02203FFF; 
+            text-align: center; 
+            width: 100%; 
+            height: 30px;
+            display: block;
+            margin: 0 auto; 
+            padding-top: 20px;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 20px;
+            background-color: rgb(187, 25, 25);
+            width: 0;
+            transition: width 0.4s ease;
+            border-radius: 10px;
+        }
+
+        .background-image {
+            background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+        body.background-image {
+            background-image: url('https://t3.ftcdn.net/jpg/03/84/62/44/240_F_384624412_PfKnYaaIFGEUEi5LLTeUafK3LLzHhX5w.jpg');
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
     </style>
 </head>
-<body>
-<body bgcolor="black">
-    <body class="background-image">
+<body class="background-image">
     <div class="background-image">
-    <div id="ok">PEOPLE SPHERE</div>
+        <div id="ok">PEOPLE SPHERE</div>
         <div id="i">APPLICATION FORM </div>
-    <div class="container">
-      
-        <form>
-            <div class="section">
-                <div class="section-header">Contact Information</div>
-                <div class="input-field">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="container">
+            <form id="applicationForm">
+                <div class="section">
+                    <div class="section-header">Contact Information</div>
+                    <div class="input-field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-field">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
                 </div>
-                <div class="input-field">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                <div class="section">
+                    <div class="section-header">Education</div>
+                    <div class="input-field">
+                        <label for="degree">Degree:</label>
+                        <input type="text" id="degree" name="degree">
+                    </div>
+                    <div class="input-field">
+                        <label for="institution">Institution:</label>
+                        <input type="text" id="institution" name="institution">
+                    </div>
+                    <div class="input-field">
+                        <label for="graduation-date">Graduation Date:</label>
+                        <input type="date" id="graduation-date" name="graduation-date">
+                    </div>
                 </div>
-                <div class="input-field">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone">
+                <div class="section">
+                    <div class="section-header">Working Skills</div>
+                    <div class="input-field">
+                        <label for="skill1">Skill 1:</label>
+                        <input type="text" id="skill1" name="skill1">
+                    </div>
                 </div>
-            </div>
-            <div class="section">
-                <div class="section-header">Education</div>
-                <div class="input-field">
-                    <label for="degree">Degree:</label>
-                    <input type="text" id="degree" name="degree">
+                <div class="section">
+                    <div class="section-header">Upload Documents</div>
+                    <div class="input-field">
+                        <label for="certificates">Certificates:</label>
+                        <input type="file" id="certificates" name="certificates" multiple>
+                    </div>
                 </div>
-                <div class="input-field">
-                    <label for="institution">Institution:</label>
-                    <input type="text" id="institution" name="institution">
+                <div class="section">
+                    <div class="section-header">Interview Schedule</div>
+                    <div class="input-field">
+                        <label for="interview-date">Interview Date:</label>
+                        <input type="date" id="interview-date" name="interview-date">
+                    </div>
                 </div>
-                <div class="input-field">
-                    <label for="graduation-date">Graduation Date:</label>
-                    <input type="date" id="graduation-date" name="graduation-date">
+                <div class="button">
+                    <input type="submit" value="Submit">
                 </div>
-            </div>
-            <div class="section">
-                <div class="section-header">Working Skills</div>
-                <div class="input-field">
-                    <label for="skill1">Skill 1:</label>
-                    <input type="text" id="skill1" name="skill1">
-                </div>
-                <div class="input-field">
-                    <label for="skill2">Skill 2:</label>
-                    <input type="text" id="skill2" name="skill2">
-                </div>
-                <div class="input-field">
-                    <label for="skill3">Skill 3:</label>
-                    <input type="text" id="skill3" name="skill3">
-                </div>
-                <div class="input-field">
-                    <label for="skill4">Skill 4:</label>
-                    <input type="text" id="skill4" name="skill4">
-                </div>
-                <div class="input-field">
-                    <label for="skill5">Skill 5:</label>
-                    <input type="text" id="skill5" name="skill5">
-                </div>
-                <div class="input-field">
-                    <label for="skill6">Skill 6:</label>
-                    <input type="text" id="skill6" name="skill6">
-                </div>
-                <div class="input-field">
-                    <label for="skill7">Skill 7:</label>
-                    <input type="text" id="skill7" name="skill7">
-                </div>
-                <div class="input-field">
-                    <label for="skill8">Skill 8:</label>
-                    <input type="text" id="skill8" name="skill8">
-                </div>
-            </div>
-            <div class="section">
-                <div class="section-header">Upload Documents</div>
-                <div class="input-field">
-                    <label for="certificates">Certificates:</label>
-                    <input type="file" id="certificates" name="certificates" multiple>
-                </div>
-                <div class="input-field">
-                    <label for="marksheet">Mark Sheet:</label>
-                    <input type="file" id="marksheet" name="marksheet" multiple>
-                </div>
-                <div class="input-field">
-                    <label for="gov-documents">Government Documents:</label>
-                    <input type="file" id="gov-documents" name="gov-documents" multiple>
-                </div>
-                <div class="input-field">
-                    <label for="resume">Resume:</label>
-                    <input type="file" id="resume" name="resume" multiple>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section-header">Interview Schedule</div>
-                <div class="input-field">
-                    <label for="interview-date">Interview Date:</label>
-                    <input type="date" id="interview-date" name="interview-date">
-                </div>
-                <div class="input-field">
-                    <label for="interview-time">Interview Time:</label>
-                    <input type="time" id="interview-time" name="interview-time">
-                </div>
-            </div>
-            <div class="button">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-    </div>
-    </body>
+
+    <script>
+        function updateProgressBar() {
+            const formElements = document.querySelectorAll('#applicationForm input');
+            let filledElements = 0;
+
+            formElements.forEach(element => {
+                if (element.value !== '') {
+                    filledElements++;
+                }
+            });
+
+            const totalElements = formElements.length;
+            const progressPercentage = (filledElements / totalElements) * 100;
+
+            document.getElementById('progressBar').style.width = progressPercentage + '%';
+        }
+
+        document.getElementById('applicationForm').addEventListener('input', updateProgressBar);
+
+        window.onload = updateProgressBar;
+    </script>
 </body>
 </html>
